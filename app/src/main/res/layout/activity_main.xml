@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/white"
+    android:clipChildren="false">
+
+<!--add Scroll Pane-->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/no_ads_btn_layout"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="@dimen/xs_dp"
+            app:cardElevation="@dimen/xxs_dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="@dimen/m_dp"
+            android:layout_marginStart="@dimen/s_dp"
+            >
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/no_ads_btn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:cornerRadius="0dp"
+                app:icon="@drawable/no_ads"
+                app:iconTint="@null"
+                app:iconSize="24dp"
+                app:iconGravity="textTop"
+                android:background="?attr/selectableItemBackground"
+                />
+        </androidx.cardview.widget.CardView>
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo"
+            app:layout_constraintEnd_toStartOf="@id/settings_btn_layout"
+            app:layout_constraintStart_toEndOf="@id/no_ads_btn_layout"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="10dp"/>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/settings_btn_layout"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_alignParentEnd="true"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="@dimen/xs_dp"
+            app:cardElevation="@dimen/xs_dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="@dimen/m_dp"
+            android:layout_marginEnd="@dimen/s_dp"
+            >
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/settings_btn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:cornerRadius="0dp"
+                app:icon="@drawable/settings"
+                app:iconTint="@null"
+                app:iconSize="24dp"
+                app:iconGravity="textTop"
+                android:background="?attr/selectableItemBackground"
+                />
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/add_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/xl_dp"
+        android:background="@color/gray"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/google_banner"
+            android:layout_marginStart="@dimen/l_dp"
+            android:layout_marginEnd="@dimen/l_dp"
+            android:layout_marginTop="@dimen/xs_dp"
+            android:layout_marginBottom="@dimen/xs_dp"
+            />
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
