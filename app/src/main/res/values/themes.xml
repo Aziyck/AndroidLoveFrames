@@ -1,4 +1,7 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
+<!-- Location: -->
+<!-- app > src > main > res > values > themes.xml -->
+
     <!-- Base application theme. -->
     <style name="Base.Theme.LoveFrames" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->

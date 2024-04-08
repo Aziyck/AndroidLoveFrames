@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- Location: -->
+<!-- app > src > main > res > values > dimentions.xml -->
 <resources>
     <dimen name="xxs_dp">4dp</dimen>
     <dimen name="xs_dp">8dp</dimen>
