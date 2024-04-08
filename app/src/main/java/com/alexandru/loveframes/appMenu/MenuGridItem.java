@@ -45,4 +45,19 @@ public class MenuGridItem extends ConstraintLayout {
             textView.setText(text);
     }
 
+    public ImageView getImageView() {
+        return imageView;
+    }
+
+    public void setImageView(ImageView imageView) {
+        this.imageView = imageView;
+    }
+
+    public TextView getTextView() {
+        return textView;
+    }
+
+    public void setTextView(TextView textView) {
+        this.textView = textView;
+    }
 }

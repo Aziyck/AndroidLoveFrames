@@ -13,10 +13,7 @@ import com.alexandru.loveframes.utils.Quartet;
 import com.alexandru.loveframes.utils.Unlock;
 
 import java.util.Arrays;
-import java.util.Collections;
-import java.util.LinkedHashMap;
 import java.util.List;
-import java.util.Map;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -83,8 +80,6 @@ public class MainActivity extends AppCompatActivity {
                     GridLayout.LayoutParams layoutParams = new GridLayout.LayoutParams();
                     layoutParams.rowSpec = GridLayout.spec(GridLayout.UNDEFINED, entry.getRowSpan());
                     layoutParams.columnSpec = GridLayout.spec(GridLayout.UNDEFINED, entry.getColumnSpan());
-
-
 
                     galleryLayout.addView(imgItem, layoutParams);
                 } break;

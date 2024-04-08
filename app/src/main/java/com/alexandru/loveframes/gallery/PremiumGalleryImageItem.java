@@ -2,15 +2,10 @@ package com.alexandru.loveframes.gallery;
 
 import android.content.Context;
 import android.util.AttributeSet;
-import android.widget.GridLayout;
-import android.widget.ImageView;
-import android.widget.RelativeLayout;
 
 import com.alexandru.loveframes.R;
 
-public class PremiumGalleryImageItem extends RelativeLayout implements GalleryImageItem{
-
-    protected ImageView imageView;
+public class PremiumGalleryImageItem extends GalleryImageItem{
     public PremiumGalleryImageItem(Context context) {
         super(context);
         init(context);
@@ -31,10 +26,4 @@ public class PremiumGalleryImageItem extends RelativeLayout implements GalleryIm
         imageView = findViewById(R.id.image_view);
     }
 
-
-    @Override
-    public void setImageResource(int resourceId) {
-        if(imageView != null)
-            imageView.setImageResource(resourceId);
-    }
 }
